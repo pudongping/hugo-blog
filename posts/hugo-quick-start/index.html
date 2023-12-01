@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <title>Hugo Quick Start // 我的博客</title>
+    <link rel="shortcut icon" href="https://pudongping.github.io/medias/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.115.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Alex Pu" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/hugo-blog/css/main.min.5b1fcc8902588589c4767187402a3c29f8b8d7a6fdef6d9f8f77045bb0d14fee.css" />
+    
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo Quick Start"/>
+<meta name="twitter:description" content="Hugo 快速搭建一个博客系统
+Hugo 是由 Go 语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。支持 markdown 语法。
+官网地址 皮肤地址 安装 Hugo 直接去 Hugo Releases 页面下载对应系统版本的 Hugo 二进制文件即可。
+如果是 Mac OS 系统，那么还可以直接使用 Homebrew 安装
+brew install hugo 这里不太推荐使用源码安装，可能对一些新手朋友不太友好。老司机，随便怎样，无所谓。
+检查 hugo 是否安装成功
+# 会打印出 hugo 的版本号 hugo version 创建站点 这里假设在自己的家目录创建站点。
+Windows 用户，建议使用 Git Bash
+# ～ 表示当前用户的家目录 hugo new site ~/hugo-blog 这里有一点需要说明的是，Hugo 默认是不会提供主题的，需要我们自己去配置一个主题，否则是无法跑起来的。 Hugo 的主题有专门的官方主题网址，不同的主题配置方式也会有所不同，请注意甄别。
+这里假设我们只想快速把 Hugo 跑起来，做一下体验。
+来吧，安装主题。
+# 切换到我们的项目根目录下 cd ~/hugo-blog # 初始化仓库地址 git init # 下载一个主题 git clone https://github."/>
+
+    <meta property="og:title" content="Hugo Quick Start" />
+<meta property="og:description" content="Hugo 快速搭建一个博客系统
+Hugo 是由 Go 语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。支持 markdown 语法。
+官网地址 皮肤地址 安装 Hugo 直接去 Hugo Releases 页面下载对应系统版本的 Hugo 二进制文件即可。
+如果是 Mac OS 系统，那么还可以直接使用 Homebrew 安装
+brew install hugo 这里不太推荐使用源码安装，可能对一些新手朋友不太友好。老司机，随便怎样，无所谓。
+检查 hugo 是否安装成功
+# 会打印出 hugo 的版本号 hugo version 创建站点 这里假设在自己的家目录创建站点。
+Windows 用户，建议使用 Git Bash
+# ～ 表示当前用户的家目录 hugo new site ~/hugo-blog 这里有一点需要说明的是，Hugo 默认是不会提供主题的，需要我们自己去配置一个主题，否则是无法跑起来的。 Hugo 的主题有专门的官方主题网址，不同的主题配置方式也会有所不同，请注意甄别。
+这里假设我们只想快速把 Hugo 跑起来，做一下体验。
+来吧，安装主题。
+# 切换到我们的项目根目录下 cd ~/hugo-blog # 初始化仓库地址 git init # 下载一个主题 git clone https://github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pudongping.github.io/hugo-blog/posts/hugo-quick-start/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-01T16:53:48+08:00" />
+<meta property="article:modified_time" content="2023-12-01T16:53:48+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://pudongping.github.io/hugo-blog/"><img class="app-header-avatar" src="https://raw.githubusercontent.com/pudongping/hugo-blog/master/static/screenshot/avatar.png" alt="Alex Pu" /></a>
+      <span class="app-header-title">我的博客</span>
+      <p>Alex，坐标上海，从事后端开发 5 年，拥有红帽 RHCSA、RHCE 认证，常用技术栈为 PHP、Go、Python、JavaScript、Node.js。热衷研究新技术，享受书写代码的感觉，相信编程是一门艺术，编程丰富生活。</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Hugo Quick Start</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Dec 1, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>Hugo 快速搭建一个博客系统</p>
+<p>Hugo 是由 Go 语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。支持 markdown 语法。</p>
+<ul>
+<li><a href="https://gohugo.io/">官网地址</a></li>
+<li><a href="https://themes.gohugo.io/">皮肤地址</a></li>
+</ul>
+<h2 id="安装-hugo">安装 Hugo</h2>
+<p>直接去 <a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a> 页面下载对应系统版本的 Hugo 二进制文件即可。</p>
+<p>如果是 Mac OS 系统，那么还可以直接使用 Homebrew 安装</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>brew install hugo
+</span></span></code></pre></div><p>这里不太推荐使用源码安装，可能对一些新手朋友不太友好。老司机，随便怎样，无所谓。</p>
+<p>检查 hugo 是否安装成功</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 会打印出 hugo 的版本号</span>
+</span></span><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div><h2 id="创建站点">创建站点</h2>
+<p>这里假设在自己的<strong>家目录</strong>创建站点。</p>
+<blockquote>
+<p>Windows 用户，建议使用 <code>Git Bash</code></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># ～ 表示当前用户的家目录</span>
+</span></span><span style="display:flex;"><span>hugo new site ~/hugo-blog
+</span></span></code></pre></div><p>这里有一点需要说明的是，<strong>Hugo 默认是不会提供主题的，需要我们自己去配置一个主题，否则是无法跑起来的。</strong> Hugo 的主题有专门的官方主题网址，不同的主题配置方式也会有所不同，请注意甄别。</p>
+<p>这里假设我们只想快速把 Hugo 跑起来，做一下体验。</p>
+<p>来吧，安装主题。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 切换到我们的项目根目录下</span>
+</span></span><span style="display:flex;"><span>cd ~/hugo-blog
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 初始化仓库地址</span>
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 下载一个主题</span>
+</span></span><span style="display:flex;"><span>git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 将主题写入配置文件，使其使用我们下载的主题</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;theme = &#39;ananke&#39;&#34;</span> &gt;&gt; hugo.toml
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 启动 Hugo</span>
+</span></span><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>然后我们在浏览器中访问 <code>http://localhost:1313</code> 即可。</p>
+<p>好了，就这么几步，<code>Hugo</code> 就已经跑起来了，是不是很简单？</p>
+<h2 id="写文章">写文章</h2>
+<p>光是 <code>Hugo</code> 跑起来还是不行，我们用它主要是来写文章的，那么我们如何写文章呢？请继续往下看。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 在项目根目录下执行以下命令，即可在 `content/posts` 目录下，创建 `hello.md` 文件</span>
+</span></span><span style="display:flex;"><span>hugo new content posts/hello.md
+</span></span></code></pre></div><p>我们通过编辑器打开 <code>content/posts/hello.md</code> 文件，大致会有以下内容：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;Hello&#34;
+</span></span><span style="display:flex;"><span>date: 2023-12-01T16:13:46+08:00
+</span></span><span style="display:flex;"><span>draft: true
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p>这里我们注意到了 <code>draft: true</code> 表示，默认新建的文章为<strong>草稿</strong>，如果我们使用 <code>hugo server</code> 启动 <code>Hugo</code> 我们会发现是无法看到我们这篇文章的，解决方式有两种：</p>
+<p>第一种，我们将 <code>draft: true</code> 更改成 <code>draft: false</code>，然后执行 <code>hugo server</code>。<br>
+第二种，我们可以直接使用 <code>hugo server -D</code> 命令，即可。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;Hello&#34;
+</span></span><span style="display:flex;"><span>date: 2023-12-01T16:13:46+08:00
+</span></span><span style="display:flex;"><span>draft: false
+</span></span><span style="display:flex;"><span>author: &#34;Alex&#34;
+</span></span><span style="display:flex;"><span>description: &#34;文章描述信息&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tags: [
+</span></span><span style="display:flex;"><span>  &#34;我的博客标签1&#34;,
+</span></span><span style="display:flex;"><span>  &#34;我的博客标签2&#34;,
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Introduction
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Hello, I&#39;m <span style="font-weight:bold">**Alex**</span> ! A Software Engineer and Backend Developer.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This is my blog website <span style="color:#e6db74">`https://pudongping.github.io`</span> 
+</span></span></code></pre></div><p>然后我们在浏览器中访问 <code>http://localhost:1313</code> 即可预览到我们写的文章。</p>
+<h2 id="如何部署">如何部署</h2>
+<p>这里我使用的是 <code>Github Pages</code> 作为演示。你也可以通过访问 <code>https://pudongping.github.io/hugo-blog</code> 来访问我的教程示例。</p>
+<p>直接在项目根目录下执行：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># 不需要添加任何参数</span>
+</span></span><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><p>我们即可看到项目根目录下会生成一个 <code>public</code> 目录，我们只需要将 <code>public</code> 目录下的所有文件推送到 <code>Github</code> 仓库中即可。这就涉及到 <code>Github Pages</code> 相关的知识了，这里不做过多的讲解，主要还是讲解 <code>Hugo</code> 的使用。</p>
+<p><strong>需要注意的是：</strong> 最好每次部署时，先清空 <code>public</code> 目录，然后再使用 <code>hugo</code> 命令生成。</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

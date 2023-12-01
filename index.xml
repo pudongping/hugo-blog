@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>我的博客</title>
+    <link>https://pudongping.github.io/hugo-blog/</link>
+    <description>Recent content on 我的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 01 Dec 2023 16:53:48 +0800</lastBuildDate><atom:link href="https://pudongping.github.io/hugo-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Quick Start</title>
+      <link>https://pudongping.github.io/hugo-blog/posts/hugo-quick-start/</link>
+      <pubDate>Fri, 01 Dec 2023 16:53:48 +0800</pubDate>
+      
+      <guid>https://pudongping.github.io/hugo-blog/posts/hugo-quick-start/</guid>
+      <description>Hugo 快速搭建一个博客系统
+Hugo 是由 Go 语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。支持 markdown 语法。
+官网地址 皮肤地址 安装 Hugo 直接去 Hugo Releases 页面下载对应系统版本的 Hugo 二进制文件即可。
+如果是 Mac OS 系统，那么还可以直接使用 Homebrew 安装
+brew install hugo 这里不太推荐使用源码安装，可能对一些新手朋友不太友好。老司机，随便怎样，无所谓。
+检查 hugo 是否安装成功
+# 会打印出 hugo 的版本号 hugo version 创建站点 这里假设在自己的家目录创建站点。
+Windows 用户，建议使用 Git Bash
+# ～ 表示当前用户的家目录 hugo new site ~/hugo-blog 这里有一点需要说明的是，Hugo 默认是不会提供主题的，需要我们自己去配置一个主题，否则是无法跑起来的。 Hugo 的主题有专门的官方主题网址，不同的主题配置方式也会有所不同，请注意甄别。
+这里假设我们只想快速把 Hugo 跑起来，做一下体验。
+来吧，安装主题。
+# 切换到我们的项目根目录下 cd ~/hugo-blog # 初始化仓库地址 git init # 下载一个主题 git clone https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
