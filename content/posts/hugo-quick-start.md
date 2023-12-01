@@ -1,7 +1,7 @@
 ---
 title: "Hugo Quick Start"
 date: 2023-12-01T16:53:48+08:00
-draft: true
+draft: false
 ---
 
 Hugo 快速搭建一个博客系统
@@ -11,9 +11,7 @@ Hugo 是由 Go 语言实现的静态网站生成器。简单、易用、高效�
 - [官网地址](https://gohugo.io/)
 - [皮肤地址](https://themes.gohugo.io/)
 
-## 快速开始
-
-### 安装 Hugo
+## 安装 Hugo
 
 直接去 [Hugo Releases](https://github.com/gohugoio/hugo/releases) 页面下载对应系统版本的 Hugo 二进制文件即可。
 
@@ -32,7 +30,7 @@ brew install hugo
 hugo version
 ```
 
-### 创建站点
+## 创建站点
 
 这里假设在自己的**家目录**创建站点。
 
@@ -57,7 +55,7 @@ cd ~/hugo-blog
 git init
 
 # 下载一个主题
-git clone  https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 
 # 将主题写入配置文件，使其使用我们下载的主题
 echo "theme = 'ananke'" >> hugo.toml
@@ -70,7 +68,7 @@ hugo server
 
 好了，就这么几步，`Hugo` 就已经跑起来了，是不是很简单？
 
-### 写文章
+## 写文章
 
 光是 `Hugo` 跑起来还是不行，我们用它主要是来写文章的，那么我们如何写文章呢？请继续往下看。
 
@@ -115,3 +113,20 @@ Hello, I'm **Alex** ! A Software Engineer and Backend Developer.
 
 This is my blog website `https://pudongping.github.io` 
 ```
+
+然后我们在浏览器中访问 `http://localhost:1313` 即可预览到我们写的文章。
+
+## 如何部署
+
+这里我使用的是 `Github Pages` 作为演示。你也可以通过访问 `https://pudongping.github.io/hugo-blog` 来访问我的教程示例。
+
+直接在项目根目录下执行：
+
+```sh
+# 不需要添加任何参数
+hugo
+```
+
+我们即可看到项目根目录下会生成一个 `public` 目录，我们只需要将 `public` 目录下的所有文件推送到 `Github` 仓库中即可。这就涉及到 `Github Pages` 相关的知识了，这里不做过多的讲解，主要还是讲解 `Hugo` 的使用。
+
+**需要注意的是：** 最好每次部署时，先清空 `public` 目录，然后再使用 `hugo` 命令生成。
