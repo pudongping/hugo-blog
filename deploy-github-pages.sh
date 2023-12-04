@@ -22,8 +22,8 @@ cd $base_path
 
 my_branch='gh-pages'
 current_time=`date +"%Y-%m-%d %H:%M:%S"`
-my_repo_1='git@gitee.com:pudongping/hugo-blog.git'
-my_repo_2='git@github.com:pudongping/hugo-blog.git'
+my_repo_1='git@github.com:pudongping/hugo-blog.git'
+my_repo_2='git@gitee.com:pudongping/hugo-blog.git'
 
 console_blue 'Deploy starting ......'
 
@@ -34,7 +34,7 @@ cd ./public
 git init
 git remote add origin $my_repo_1
 git remote set-url --add origin $my_repo_2
-git add -A && git commit -s -m "Site updated: ${current_time}"
+git add -A && git commit -sm "Site updated: ${current_time}"
 
 git checkout -b $my_branch
 git push -f -u origin $my_branch
